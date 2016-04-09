@@ -1,2 +1,1 @@
 ### iOS Challenge Projects
-- Haller
