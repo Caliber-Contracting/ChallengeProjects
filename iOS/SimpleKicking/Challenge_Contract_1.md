@@ -1,7 +1,7 @@
 ## SimpleKicking Challenge Project
 #### Due Week of May 15th
 
-### OverView
+### Overview
 > SimpleKicking is a sports analytics company out of Dallas, TX. For this challenge project, you are to build an application that allows a user to take a video and keep it persisted in a tableView inside the application. Then build a custom player that has a textfield below it saying "Where information should go.".
 
 ### Challenge

@@ -1,7 +1,7 @@
 ## FittFamm Challenge Project
 #### Due Week of May 15th
 
-### OverView
+### Overview
 > FittFamm is a social network based around fitness. So for this challenge project you are once again going to be using Twitter, and HealthKit.
 
 ### Challenge

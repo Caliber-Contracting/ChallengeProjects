@@ -2,7 +2,7 @@
 #### Due Week of May 15th
 #### Rails is recommended, but you may use any web app framework such as Angular, etc.
 
-### OverView
+### Overview
 > SimpleKicking is a sports analytics company out of Dallas, TX. For this challenge project, you are building a small rails web-app.
 
 ### Challenge
