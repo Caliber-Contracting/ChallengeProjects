@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h8K-eH-LZL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="FNL-FV-0WN">
+            <objects>
+                <viewController title="Main" id="h8K-eH-LZL" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fep-Du-Ue6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tl8-DZ-wBb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LK0-1D-WnF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9k-Rn-dYu">
+                                <rect key="frame" x="20" y="540" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4zN-Qg-asb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="Action_Button_Send:" destination="h8K-eH-LZL" eventType="touchUpInside" id="UyX-zj-pZr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your heart rate tweet:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="kql-y6-Nnt">
+                                <rect key="frame" x="20" y="124" width="560" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jj" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jok-6k-nX2">
+                                <rect key="frame" x="20" y="280" width="560" height="240"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Enter Your Heartrate" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1k8-Ta-1g3">
+                                <rect key="frame" x="20" y="180" width="560" height="80"/>
+                                <color key="backgroundColor" red="0.98194839015151514" green="0.98194839015151514" blue="0.98194839015151514" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="CVF-Cu-s0S"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1k8-Ta-1g3" firstAttribute="centerX" secondItem="LK0-1D-WnF" secondAttribute="centerX" id="BJw-YG-QQm"/>
+                            <constraint firstItem="kql-y6-Nnt" firstAttribute="centerX" secondItem="LK0-1D-WnF" secondAttribute="centerX" id="DXZ-qX-xUB"/>
+                            <constraint firstItem="1k8-Ta-1g3" firstAttribute="centerY" secondItem="LK0-1D-WnF" secondAttribute="centerY" constant="-80" id="F65-na-5dN"/>
+                            <constraint firstItem="1k8-Ta-1g3" firstAttribute="top" secondItem="kql-y6-Nnt" secondAttribute="bottom" constant="20" id="Obm-aP-NFy"/>
+                            <constraint firstItem="i9k-Rn-dYu" firstAttribute="leading" secondItem="LK0-1D-WnF" secondAttribute="leadingMargin" id="Sdl-g2-kyF"/>
+                            <constraint firstItem="Jok-6k-nX2" firstAttribute="centerX" secondItem="LK0-1D-WnF" secondAttribute="centerX" id="Stu-jo-wY8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kql-y6-Nnt" secondAttribute="trailing" id="UBz-Pm-vJZ"/>
+                            <constraint firstItem="kql-y6-Nnt" firstAttribute="leading" secondItem="LK0-1D-WnF" secondAttribute="leadingMargin" id="Y6q-cu-hrd"/>
+                            <constraint firstItem="Jok-6k-nX2" firstAttribute="leading" secondItem="LK0-1D-WnF" secondAttribute="leadingMargin" id="ZWq-lg-Amt"/>
+                            <constraint firstItem="i9k-Rn-dYu" firstAttribute="trailing" secondItem="LK0-1D-WnF" secondAttribute="trailingMargin" id="c6x-WT-yUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jok-6k-nX2" secondAttribute="trailing" id="cUC-Wd-2la"/>
+                            <constraint firstItem="Tl8-DZ-wBb" firstAttribute="top" secondItem="i9k-Rn-dYu" secondAttribute="bottom" id="emN-kI-8mA"/>
+                            <constraint firstItem="Jok-6k-nX2" firstAttribute="top" secondItem="1k8-Ta-1g3" secondAttribute="bottom" constant="20" id="nvk-E2-GdI"/>
+                            <constraint firstItem="1k8-Ta-1g3" firstAttribute="leading" secondItem="LK0-1D-WnF" secondAttribute="leadingMargin" id="qux-z6-VOZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1k8-Ta-1g3" secondAttribute="trailing" id="uOZ-vJ-URa"/>
+                            <constraint firstItem="i9k-Rn-dYu" firstAttribute="top" secondItem="Jok-6k-nX2" secondAttribute="bottom" constant="20" id="x4A-zA-RMr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DXZ-qX-xUB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="Button_Send" destination="i9k-Rn-dYu" id="W16-V7-rgs"/>
+                        <outlet property="Label_Status" destination="Jok-6k-nX2" id="ltX-9v-Ykm"/>
+                        <outlet property="TextField_HeartrateEntry" destination="1k8-Ta-1g3" id="khN-Oq-77u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4T-Ts-ujw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="183"/>
+        </scene>
+    </scenes>
+</document>
